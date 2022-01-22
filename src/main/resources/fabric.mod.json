@@ -15,12 +15,7 @@
     "license": "Unlicense",
     "icon": "assets/nametagged/icon.png",
 
-    "environment": "*",
-    "entrypoints": {
-        "main": [
-            "hibi.nametagged.ExampleMod"
-        ]
-    },
+    "environment": "client",
     "mixins": [
         "nametagged.mixins.json"
     ],
