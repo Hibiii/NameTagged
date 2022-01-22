@@ -1,0 +1,13 @@
+{
+    "required": true,
+    "minVersion": "0.8",
+    "package": "hibi.nametagged.mixin",
+    "compatibilityLevel": "JAVA_16",
+    "mixins": [],
+    "client": [
+        "ExampleMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}

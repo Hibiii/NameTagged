@@ -31,3 +31,6 @@ bin/
 # fabric
 
 run/
+
+# local jars for cursed stuff
+libs/

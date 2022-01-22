@@ -1,9 +1,11 @@
-# Fabric Example Mod
+# NameTagged
 
-## Setup
+## After Cloning
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+- Make a directory called `libs`
+- Download the latest Fabric release of unascribed/Ears version 1.4.5 and save it there under the name `ears-1.4.5.jar`
 
 ## License
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+This template is available under the Unlicense.
+Feel free to learn from it and incorporate it in your own projects.
