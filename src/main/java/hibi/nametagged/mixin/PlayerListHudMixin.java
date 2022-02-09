@@ -9,8 +9,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-import hibi.nametagged.Badges;
-import hibi.nametagged.ModCompat;
+import hibi.nametagged.Common;
 
 @Mixin(PlayerListHud.class)
 public class PlayerListHudMixin {
@@ -19,9 +18,7 @@ public class PlayerListHudMixin {
 		at = @At("RETURN"),
 		cancellable = true)
 	private void addBadges(PlayerListEntry entry, CallbackInfoReturnable<Text> info) {
-		if(ModCompat.hasEars(entry)) {
-			Text out = Badges.prepend(Badges.EARS_BADGE, info.getReturnValue());
-			info.setReturnValue(out);
-		}
+		Text out = Common.prepend(Text.of(Common.store.get(entry.getProfile().getId())), info.getReturnValue());
+		info.setReturnValue(out);
 	}
 }
